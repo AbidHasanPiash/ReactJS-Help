@@ -32,6 +32,7 @@ export default function ScreenSize() {
 
 ## Use of this function
 > The function return an object called **windowDimenion**. **windowDimenion** object contain two values, one is *winWidth* and other *winHeight*.
+
 1 Import the function
 2 Assign to a variable
 3 Access all property with the variable using *.(dot)* property
