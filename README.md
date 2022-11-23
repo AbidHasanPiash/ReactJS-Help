@@ -1,7 +1,6 @@
 # ScreenScize-ReactJS
 This custom function can be use to determine real-time screen resolution.
-## Use of this function
-> The function return an object called **windowDimenion**. **windowDimenion** object contain two values, one is *winWidth* and other *winHeight*.
+
 ## The function
 ```
 import { useState, useEffect } from 'react'
@@ -28,5 +27,20 @@ export default function ScreenSize() {
   }, [windowDimenion])
 
   return windowDimenion;
+}
+```
+
+## Use of this function
+> The function return an object called **windowDimenion**. **windowDimenion** object contain two values, one is *winWidth* and other *winHeight*.
+
+```
+import ScreenSize from './ScreenSize';
+function App() {
+  const screen = ScreenSize();
+  return (
+    <p>{screen.winWidth}</p>
+    <p>{screen.winHeight}</p>
+  )
+}
 }
 ```
